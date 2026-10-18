@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Klaira</title>
+<link rel="icon" href="/static/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="side">
+    <a class="brand" href="#/ringkasan" aria-label="Klaira, ke ringkasan">
+      <img src="/static/logo.svg" width="28" height="28" alt="">
+      <span>klaira</span>
+    </a>
+    <nav class="nav" aria-label="Menu utama">
+      <a href="#/ringkasan" data-nav="ringkasan"><i data-icon="home"></i><span>Ringkasan</span></a>
+      <a href="#/klaim" data-nav="klaim"><i data-icon="list"></i><span>Antrian klaim</span><b class="badge" id="badge" hidden></b></a>
+      <a href="#/baru" data-nav="baru"><i data-icon="plus"></i><span>Klaim baru</span></a>
+      <a href="#/cek" data-nav="cek"><i data-icon="scan"></i><span>Cek cepat</span></a>
+    </nav>
+    <div class="side-foot">
+      <div class="engine" id="engine"><span class="dot"></span><span>Memeriksa mesin…</span></div>
+      <div class="org"><span class="org-av">RS</span><span><b>RSU Sehat Sentosa</b><small>Data contoh</small></span></div>
+    </div>
+  </aside>
+  <main id="view" class="main" tabindex="-1"></main>
+</div>
+<div class="toast" id="toast" role="status" hidden></div>
+<script src="/static/app.js"></script>
+</body>
+</html>
